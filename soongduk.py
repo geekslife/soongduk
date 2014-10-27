@@ -45,7 +45,8 @@ def removeHwp():
 def login():
     ''' returns html '''
     browser.open(HOME_URL)
-    browser.select_form(nr=0)
+    #browser.select_form(nr=0)
+    browser.select_form('wgt_login_form')
     browser.form['userid'] = USERNAME
     browser.form['userpasswd'] = PASSWORD
     browser.submit()
